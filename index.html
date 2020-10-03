@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 20px;
+        /* align-items: center; */
+      }
+      .container {
+        display: grid;
+        text-align: right;
+        /* font-size: 2em; */
+        padding: 60px;
+        grid-template-columns: repeat(4, 1fr);
+        row-gap: 6px;
+        column-gap: 5px;
+        width: 45vw;
+        margin: auto;
+        padding: 5px;
+        background: #ddd;
+      }
+      .screen {
+        border: #999 1px solid;
+        background: #fff;
+        height: 80px;
+        font-size: 2em;
+        grid-column-start: 1;
+        grid-column-end: 5;
+        border-radius: 10px;
+      }
+      .but {
+        height: 60px;
+        background: #eee;
+        border: #999 1px solid;
+        height: 80 px;
+        text-align: center;
+        border-radius: 10px;
+      }
+      .but:hover {
+        background: #fff;
+        /* font-style: italic; */
+        /* font-size: 1.5em; */
+        color: #989;
+        border: #999 2px solid;
+      }
+      .active {
+        background: white;
+        border: 2px #fff solid;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="screen">_</div>
+      <div class="clr but">C</div>
+      <div class="clearall but">CE</div>
+      <div class="backspace but">DEL</div>
+      <div class="div but func">/</div>
+      <div class="svn but num">7</div>
+      <div class="eit but num">8</div>
+      <div class="nin but num">9</div>
+      <div class="mul but func">X</div>
+      <div class="for but num">4</div>
+      <div class="fiv but num">5</div>
+      <div class="six but num">6</div>
+      <div class="sin but func">-</div>
+      <div class="one but num">1</div>
+      <div class="two but num">2</div>
+      <div class="thr but num">3</div>
+      <div class="add but func">+</div>
+      <div class="percent but func">PC</div>
+      <div class="zro but num">0</div>
+      <div class="period but func">.</div>
+      <div class="equals but func">=</div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
